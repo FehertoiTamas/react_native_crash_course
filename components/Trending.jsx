@@ -11,6 +11,8 @@ import * as Animatable from "react-native-animatable";
 
 import { icons } from "../constants";
 
+import { Video, ResizeMode } from "expo-av";
+
 const zoomIn = {
   0: {
     scale: 0.9,
@@ -32,7 +34,6 @@ const zoomOut = {
 const TrendingItem = ({ activeItem, item }) => {
   const [play, setPlay] = useState(false);
 
-  console.log(activeItem.$id, item.$id);
   return (
     <Animatable.View
       className="mr-5"
