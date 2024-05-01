@@ -30,7 +30,7 @@ const Create = () => {
   });
 
   const openPicker = async (selectType) => {
-    const result = await ImagePicker.launchImageLibraryAsync({
+    let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes:
         selectType === "image"
           ? ImagePicker.MediaTypeOptions.Images
